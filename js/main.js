@@ -31,3 +31,19 @@ function slideRight() {
     current++;
 }
 
+//Left arrow click
+arrowLeft.addEventListener('click', ()=> {
+    if (current === 0){
+        current = sliderImages.length;
+    }
+    slideLeft();
+});
+
+//Right arrow click
+arrowRight.addEventListener('click', ()=> {
+    if (current === sliderImages.length -1) {
+        current = -1;
+    }
+    slideRight();
+});
+startSlide();

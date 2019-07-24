@@ -12,3 +12,22 @@ function reset() {
         sliderImages[i].style.display = 'none';
     }
 }
+//Initialize slider
+function startSlide() {
+    reset();
+    sliderImages[0].style.display = 'block';
+}
+//Show previous
+function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = 'block';
+    current--;
+}
+
+//Show next
+function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = 'block';
+    current++;
+}
+

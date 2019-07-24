@@ -44,4 +44,27 @@ body {
   font-size: 5rem;
 }
 
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  left: 0;
+  border-color: transparent #fff transparent transparent;
+  margin: 0 0 0 30px;
+}
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  right: 0;
+  border-color: transparent transparent transparent #fff;
+  margin: 0 30px 0 0;
+}
+
 /*# sourceMappingURL=main.css.map */
